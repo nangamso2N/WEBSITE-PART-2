@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sweet Cravings Bakery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .map {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .locations {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 768px) {
+            .locations {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Sweet Cravings Bakery</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>We would love to hear from you! Reach out to us via phone, email, or visit any of our locations.</p>
+
+        <div class="locations">
+            <div class="location">
+                <h3>Cape Town Branch</h3>
+                <p>123 Bakery Street, Cape Town, 8001</p>
+                <p>Phone: 021-123-4567 | Email: capetown@sweetcravings.co.za</p>
+                <iframe 
+                    class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.368929460947!2d18.4233!3d-33.9189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU1JzA4LjAiUyAxOMKwMjUnMjQuMCJF!5e0!3m2!1sen!2sza!4v1694695812345"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="location">
+                <h3>Pretoria Branch</h3>
+                <p>456 Sweet Ave, Pretoria, 0002</p>
+                <p>Phone: 012-345-6789 | Email: pretoria@sweetcravings.co.za</p>
+                <iframe 
+                    class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.154529259154!2d28.2293!3d-25.7461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956214b4b6b14d%3A0x0!2zMjXCsDQ0JzQ2LjAiUyAyOMKwMTMnNDUuNSJF!5e0!3m2!1sen!2sza!4v1694695890123"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <h3>Contact Form</h3>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Sweet Cravings Bakery </p>
+</footer>
+</body>
+</html>

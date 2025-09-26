@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Sweet Cravings Bakery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Sweet Cravings Bakery</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html" class="active">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact">
+        <h2>Place an Enquiry</h2>
+        <p>Have questions about custom cakes, bulk orders, or catering services? Fill out the form below and we’ll get back to you promptly.</p>
+
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            
+            <select name="enquiry-type" required>
+                <option value="">Select Enquiry Type</option>
+                <option value="custom-cake">Custom Cake</option>
+                <option value="bulk-order">Bulk Order</option>
+                <option value="catering">Catering Service</option>
+                <option value="other">Other</option>
+            </select>
+
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Sweet Cravings Bakery </p>
+</footer>
+</body>
+</html>
